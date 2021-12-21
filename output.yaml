@@ -1,0 +1,60 @@
+$kubectl describe test test
+
+---
+Name:         test
+Namespace:    
+Labels:       crossplane.io/composite=test
+Annotations:  <none>
+API Version:  ck8s.crossplane.io/v1alpha1
+Kind:         test
+Metadata:
+  Creation Timestamp:  2021-12-21T19:11:47Z
+  Generation:          5
+    Manager:         kubectl-client-side-apply
+    Operation:       Update
+    Time:            2021-12-21T19:20:50Z
+  Resource Version:  9017
+  UID:               903dcb9e-0f00-46bf-ae70-394656d2767f
+Spec:
+  Composition Ref:
+    Name:                     ck8s
+  Composition Update Policy:  Automatic
+  Parameters:
+    Location:  us-east-1
+    Max:       2
+    Min:       2
+    Version:   1.21
+    Vpc Id:    vpc-05a143acf7388636a
+  Resource Refs:
+    API Version:  ec2.aws.crossplane.io/v1beta1
+    Kind:         SecurityGroup
+    Name:         test-gvgzs
+    API Version:  iam.aws.crossplane.io/v1beta1
+    Kind:         Role
+    Name:         test-nbgjf
+    API Version:  iam.aws.crossplane.io/v1beta1
+    Kind:         RolePolicyAttachment
+    Name:         test-fpl6p
+    API Version:  eks.aws.crossplane.io/v1beta1
+    Kind:         Cluster
+    Name:         test-tzlpw
+    API Version:  iam.aws.crossplane.io/v1beta1
+    Kind:         Role
+    Name:         test-vjqpt
+    API Version:  iam.aws.crossplane.io/v1beta1
+    Kind:         RolePolicyAttachment
+    Name:         test-wbwrr
+    API Version:  iam.aws.crossplane.io/v1beta1
+    Kind:         RolePolicyAttachment
+    Name:         test-vd628
+    API Version:  iam.aws.crossplane.io/v1beta1
+    Kind:         RolePolicyAttachment
+    Name:         test-j4nhw
+    API Version:  eks.aws.crossplane.io/v1alpha1
+    Kind:         NodeGroup
+    Name:         test-c9dls
+Status:
+  Eks:
+    Clusterarn:         arn:aws:eks:us-east-1:123456789112:cluster/test-tzlpw
+    Platformversion:    eks.4
+    Security Group ID:  sg-0454aea346d66edaf

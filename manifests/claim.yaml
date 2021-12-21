@@ -1,0 +1,11 @@
+apiVersion: ck8s.crossplane.io/v1alpha1
+kind: test
+metadata: 
+  name: test
+spec:
+  parameters:
+    vpcId: vpc-05a143acf7388636a
+    location: us-east-1
+    version: "1.21"
+    min: 2
+    max: 2
